@@ -1,0 +1,124 @@
+.modal {
+    transform: translateX(-100%); /* Starts off-screen */
+    transition: transform 0.25s ease-in-out; /* Smooth transition for slide-in/out */
+    display: none; /* Keep it hidden initially */
+    position: fixed; /* Fixed position to cover the entire viewport */
+    z-index: 99999; /* Ensure it's above the placesList but below the header and bottom nav */
+    left: 0;
+    top: 0; /* Adjusted to 0 to cover from top edge */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height to cover the entire viewport */
+    overflow: auto; /* Enable scroll if content is taller than the screen */
+    background-color: rgba(0,0,0,0.4); /* Semi-transparent background */
+}
+
+.modal-content {
+    box-sizing: border-box; /* This makes sure padding and borders are included in the element's width */
+    position: absolute;
+    top: 80px; /* Adjust this value to be below your header */
+    bottom: 100px; /* Adjust this value to be above your bottom nav, assuming the bottom nav is 100px high */
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 20px; /* Ensure padding does not cause overflow */
+    border: 1px solid #888;
+    background-color: #fefefe;
+    overflow: auto; /* Enable scroll for the content itself */
+    height: auto; /* Height to auto to contain the content */
+    width: 100%; /* Full width */
+    max-width: 100vw; /* Ensure it does not exceed the viewport width */
+}        
+
+.close {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Photo placeholder */
+.modal-photo {
+    border: black 1px solid;
+    position: relative; /* Add this line */
+    height: 500px; /* Fixed height */
+    max-width: 800px;
+    width: auto;
+    background-color: #ddd; /* Placeholder background */
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 20px; /* Space between photo and text content */
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Modal text styling for a more appealing look */
+.modal-text {
+    color: #333; /* Dark grey color for text */
+    line-height: 1.6; /* Spacing between lines */
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal-text h2, .modal-text p {
+    margin-bottom: 10px; /* Space between paragraphs */
+}
+
+.modal-text a {
+    color: #0066cc; /* Links color */
+    text-decoration: none; /* No underline */
+}
+
+.modal-text a:hover {
+    text-decoration: underline; /* Underline on hover */
+} 
+
+.slide-arrow {
+    position: absolute;
+    top: 340px;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: 18px;
+}
+
+#slideLeft {
+    left: 10px;
+}
+
+#slideRight {
+    right: 10px;
+}       
+
+.fa-star {
+    font-size: 24px; /* Adjust size as needed */
+}  .fa-star:hover {
+    cursor: pointer;; /* Change color on hover */
+}
+
+#placeHours > p:first-child {
+    margin-top: 0;
+}
+
+fieldset {
+    margin-top: 20px;
+    width: -moz-fit-content;
+    width: fit-content;
+}

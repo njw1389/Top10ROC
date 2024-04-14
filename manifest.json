@@ -1,0 +1,19 @@
+{
+    "name": "Top 10 ROC",
+    "short_name": "Visit ROC",
+    "icons": [
+        {
+            "src": "/favicon-B/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/favicon-B/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "/School/Top10ROC/index.html",
+    "display": "standalone",
+    "orientation": "portrait"
+}  

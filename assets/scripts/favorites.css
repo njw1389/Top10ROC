@@ -1,0 +1,170 @@
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* Start Of Feedback Messages Styling */
+.no-favorites-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    font-size: 18px; /* Make the text readable */
+    margin-top: 20px; /* Add some space at the top */
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #ddd; /* Add a subtle border */
+    border-radius: 8px; /* Round the corners */
+    background-color: #f9f9f9; /* Light background to stand out */
+    max-width: 725px;
+}
+
+.no-favorites-message-container {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.no-favorites-message button {
+    width: 200px;
+    margin-top: 10px; /* Space above the button */
+    padding: 10px 20px; /* Make the button larger for easier clicking */
+    border-radius: 5px; /* Rounded corners for the button */
+    border: none; /* Remove default border */
+    background-color: #007bff; /* A noticeable, friendly color */
+    color: white; /* Text color */
+    font-size: 16px; /* Slightly larger font for the button */
+    cursor: pointer; /* Change cursor to pointer */
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.no-favorites-message button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+/* End Of Feedback Messages Styling */
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* Start Of Sort By Dropdown Menu Styling */
+.sort-by-dropdown {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: 10px;
+    padding-right: 0;
+    width: 150px;
+    height: 60px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+#SortByText {
+    border-right: 1px solid black; /* Ensure consistency with button border */
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 35px
+}
+
+#SortByIcon {
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sort-by-dropdown button {
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 22px;
+    background-color: #f8f8f8;
+    border: 1px solid black;
+    text-decoration: none;
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
+    padding: 0%;
+    z-index: 9999;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.sort-by-dropdown button:hover {
+    cursor: pointer;
+}
+
+.sort-by-dropdown label:hover {
+    cursor: pointer;
+}
+
+.sort-by-dropdown input[type="checkbox"]:hover {
+    cursor: pointer;
+}
+
+.sort-by-dropdown label {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+.L1 {
+    margin-top: 8px;
+    margin-left: 3px;
+    margin-bottom: 10px;
+    z-index: -10;
+} 
+.L2 {
+    margin-left: 3px;
+    margin-bottom: 8px;
+    z-index: -20;
+}
+
+.sort-by-dropdown input[type="checkbox"] {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+    z-index: -30;
+}
+
+.sort-by-dropdown > div {
+    display: none;
+    position: absolute;
+    background: white;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    top: 50px;
+    width: 138px;
+    border: 1px solid black;
+    border-top: none;
+    z-index: 10;
+    margin-top: auto;
+    margin-bottom: auto;    
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+/* End Of Sort By Dropdown Menu Styling */
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/* Start Of Display Favorites Styling */
+.mainList {
+    padding-bottom: 100px; /* Provide spacing for the bottom navigation */
+} 
+
+.card {
+    max-width: 698px;
+}
+
+.placeItem {
+    max-width: 698px;
+}
+
+#mainPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 100px;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 730px; /* Optimal content width */
+}
+/* End Of Display Favorites Styling */
+/*//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/

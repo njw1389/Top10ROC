@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-top: 80px;
+    cursor: default;
+}
+
+html {
+    scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
+header {
+    border-bottom: black 1px solid;
+    position: fixed;
+    z-index: 9999999;
+    height: 80px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: white;
+}
+
+header h1 {
+    text-align: center;
+    font-weight: 400;
+}
+
+.bottom-nav {
+    z-index: 999999;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f8f8;
+    border-top: black 1px solid;
+    height: 100px;
+}
+
+.nav-item {
+    flex-grow: 1;
+    padding: 15px 10px;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item i {
+    font-size: 40px;
+}
+
+.active {
+    flex-grow: 2;
+}
+
+.nav-item:hover, .nav-item:focus {
+    color: #555;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+#favorites-link, #home-link {
+    border-right: black .5px solid;
+}
+
+#placesList .card:last-child {
+    margin-bottom:  30px;
+}
+
+#mainPage .card:last-child {
+    margin-bottom:  30px;
+}

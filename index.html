@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+
+        <link rel="manifest" href="/School/Top10ROC/manifest.json">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-title" content="Top10ROC">
+
+        <link rel="icon" sizes="16x16" href="favicon-B/favicon-16x16.png" type="image/png">
+        <link rel="icon" sizes="32x32" href="favicon-B/favicon-32x32.png" type="image/png">
+        <link rel="apple-touch-icon" sizes="180x180" href="favicon-B/apple-touch-icon.png">
+
+        <link rel="stylesheet" href="assets/scripts/univ.css">
+        <link rel="stylesheet" href="assets/scripts/top10.css">
+        <link rel="stylesheet" href="assets/scripts/modal.css">
+        <link rel="stylesheet" href="assets/scripts/media.css">
+        <link rel="stylesheet" href="fontawesome/css/all.css">
+    </head>
+    <body>
+        <header>
+            <h1>Top 10 Places To Visit in Rochester</h1>
+        </header>
+        
+        <div id="mainPage" class="mainList">
+            <div class="checkbox-container">
+                <div class="capsule">
+                    <input type="checkbox" id="chkActivities" name="filter" value="Activities" hidden>
+                    <label for="chkActivities" class="capsule-side capsule-left">
+                        <i class="fas fa-hiking"></i>
+                        <span>Activities</span>
+                    </label>
+            
+                    <input type="checkbox" id="chkRestaurants" name="filter" value="Restaurants" hidden>
+                    <label for="chkRestaurants" class="capsule-side capsule-right">
+                        <i class="fas fa-utensils"></i>
+                        <span>Restaurants</span>
+                    </label>
+                </div>
+            </div>            
+            
+            <div id="placesList">
+                <!-- Places will be loaded here by JavaScript -->
+            </div>
+        </div>
+
+        <!-- Modal Structure -->
+        <div id="placeModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="modal-photo" id="placePhoto">
+                    <!-- Slideshow Images will be inserted here dynamically -->
+                </div>
+                <button id="slideLeft" class="slide-arrow">&lt;</button>
+                <button id="slideRight" class="slide-arrow">&gt;</button>                
+
+                <div class="modal-text">
+                    <h2 id="placeTitle"><!-- Place Title --></h2>
+                    <p id="placeDescription"><!-- Place Description --></p>
+                    <p id="placeAddress"><!-- Place Address --></p>
+                    <p id="placeWebsite"><!-- Place Website --></p>
+                    <p id="placePhone"><!-- Place Phone --></p>
+                    <fieldset>
+                        <legend>Hours</legend>
+                        <div id="placeHours"><!-- Place Hours --></div>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Navigation -->
+        <nav class="bottom-nav">
+            <a href="favorites.html" id="favorites-link" class="nav-item">
+                <i class="fa fa-star"></i>
+            </a>
+            <a href="index.html" id="home-link" class="nav-item active">
+                <i class="fa fa-home"></i>
+            </a>
+        </nav>
+
+        <script src="assets/scripts/scripts.js"></script>
+    </body>
+</html>

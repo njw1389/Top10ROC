@@ -1,0 +1,216 @@
+@media (min-width: 840px) {
+    #slideLeft {
+        left: calc(50% - 420px); /* Adjust this value based on your layout */
+    }
+
+    #slideRight {
+        right: calc(50% - 420px); /* Adjust this value based on your layout */
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header {
+        height: 75px;
+    }
+
+    body {
+        padding-top: 75px;
+    }
+
+    .slide-arrow {
+        top: 322px;
+    }
+
+    .modal-photo {
+        height: 450px;
+    }
+
+    .modal-content {
+        top: 75px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .placeItem {
+        height: 40vh;
+        width: auto;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .capsule {
+        width: 225px;
+        height: 35px;
+    }
+
+    .capsule label {
+        font-size: .8rem;
+    }
+
+    .modal-photo {
+        height: 400px;
+    }
+
+    .slide-arrow {
+        top: 298px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .placeItem {
+        height: 35vh;
+        width: auto;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .bottom-nav {
+        height: 78px;
+    }
+
+    .bottom-nav i {
+        font-size: 30px;
+    }
+
+    #mainPage {
+        padding-bottom: 78px;
+    }
+
+    .modal-content {
+        top: 75px;
+        bottom: 78px;
+    }
+
+    .modal-photo {
+        height: 400px;
+    }
+
+    .slide-arrow {
+        top: 292px;
+    }
+
+    #slideLeft {
+        left: 1px;
+    }
+    
+    #slideRight {
+        right: 1px;
+    }       
+    
+}
+
+@media screen and (max-width: 520px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header {
+        height: 60px;
+    }
+
+    body {
+        padding-top: 60px;
+    }
+
+    .modal-content {
+        top: 60px;
+    }
+
+    .modal-photo {
+        height: 375px;
+    }
+
+    .slide-arrow {
+        top: 280px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .placeItem {
+        height: 30vh;
+        width: auto;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .modal-photo {
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    header h1 {
+        font-size: 1.4rem;
+    }
+
+    header {
+        height: 55px;
+    }
+
+    body {
+        padding-top: 55px;
+    }
+
+    .modal-content {
+        top: 55px;
+    }
+
+    .modal-photo {
+        height: 350px;
+    }
+
+    .slide-arrow {
+        top: 267px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .capsule {
+        width: 220px;
+        height: 30px;
+    }
+
+    .capsule label {
+        font-size: .7rem;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    header {
+        height: 50px;
+    }
+
+    body {
+        padding-top: 50px;
+    }
+
+    .modal-photo {
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .placeItem {
+        height: 25vh;
+        width: auto;
+    }
+
+    h2 {
+        font-size: 1.0rem;
+    }
+}
